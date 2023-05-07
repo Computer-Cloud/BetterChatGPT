@@ -99,7 +99,7 @@ const ApiMenu = ({
               ns='api'
               components={[
                 <a
-                  href='https://open.ds.ac.cn/dashboard'
+                  href='https://ai.ds.ac.cn/dashboard'
                   className='link'
                   target='_blank'
                 />,
