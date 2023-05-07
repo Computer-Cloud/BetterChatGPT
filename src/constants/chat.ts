@@ -39,28 +39,28 @@ export const modelMaxToken = {
 
 export const modelCost = {
   'gpt-3.5-turbo': {
-    prompt: { price: 0.002, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
+    prompt: { price: 0.015, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
   },
   'gpt-3.5-turbo-0301': {
-    prompt: { price: 0.002, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
+    prompt: { price: 0.015, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
   },
   'gpt-4': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
+    prompt: { price: 0.25, unit: 1000 },
+    completion: { price: 0.50, unit: 1000 },
   },
   'gpt-4-0314': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
+    prompt: { price: 0.25, unit: 1000 },
+    completion: { price: 0.50, unit: 1000 },
   },
   'gpt-4-32k': {
-    prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
+    prompt: { price: 0.50, unit: 1000 },
+    completion: { price: 1.00, unit: 1000 },
   },
   'gpt-4-32k-0314': {
-    prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
+    prompt: { price: 0.50, unit: 1000 },
+    completion: { price: 1.00, unit: 1000 },
   },
 };
 
@@ -77,7 +77,7 @@ export const _defaultChatConfig: ConfigInterface = {
 
 export const generateDefaultChat = (
   title?: string,
-  folder?: string
+  folder?: string,
 ): ChatInterface => ({
   id: uuidv4(),
   title: title ? title : 'New Chat',
