@@ -47,20 +47,20 @@ export const modelCost = {
     completion: { price: 0.015, unit: 1000 },
   },
   'gpt-4': {
-    prompt: { price: 0.25, unit: 1000 },
-    completion: { price: 0.50, unit: 1000 },
+    prompt: { price: 0.225, unit: 1000 },
+    completion: { price: 0.450, unit: 1000 },
   },
   'gpt-4-0314': {
-    prompt: { price: 0.25, unit: 1000 },
-    completion: { price: 0.50, unit: 1000 },
+    prompt: { price: 0.225, unit: 1000 },
+    completion: { price: 0.450, unit: 1000 },
   },
   'gpt-4-32k': {
-    prompt: { price: 0.50, unit: 1000 },
-    completion: { price: 1.00, unit: 1000 },
+    prompt: { price: 0.450, unit: 1000 },
+    completion: { price: 0.900, unit: 1000 },
   },
   'gpt-4-32k-0314': {
-    prompt: { price: 0.50, unit: 1000 },
-    completion: { price: 1.00, unit: 1000 },
+    prompt: { price: 0.450, unit: 1000 },
+    completion: { price: 0.900, unit: 1000 },
   },
 };
 

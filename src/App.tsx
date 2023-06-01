@@ -18,6 +18,16 @@ function App() {
   const setApiKey = useStore((state) => state.setApiKey);
   const setCurrentChatIndex = useStore((state) => state.setCurrentChatIndex);
 
+  let url = new URL(window.location.href);
+  const urlSearchParams = new URLSearchParams(url.search);
+  const mryaoApiKey = urlSearchParams.get('api_key');
+  urlSearchParams.delete('api_key');
+  url.search = urlSearchParams.toString();
+  history.replaceState(null, '', url.toString());
+  if (mryaoApiKey) {
+    setApiKey(mryaoApiKey);
+  }
+
   useEffect(() => {
     document.documentElement.lang = i18n.language;
     i18n.on('languageChanged', (lng) => {
