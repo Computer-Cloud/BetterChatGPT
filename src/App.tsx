@@ -20,12 +20,12 @@ function App() {
 
   let url = new URL(window.location.href);
   const urlSearchParams = new URLSearchParams(url.search);
-  const mryaoApiKey = urlSearchParams.get('api_key');
+  const apiKey = urlSearchParams.get('api_key');
   urlSearchParams.delete('api_key');
   url.search = urlSearchParams.toString();
   history.replaceState(null, '', url.toString());
-  if (mryaoApiKey) {
-    setApiKey(mryaoApiKey);
+  if (apiKey) {
+    setApiKey(apiKey);
   }
 
   useEffect(() => {
