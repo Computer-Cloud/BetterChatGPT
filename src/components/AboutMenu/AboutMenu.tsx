@@ -96,7 +96,7 @@ const AboutMenu = () => {
               {/*  </p>*/}
               {/*  <p>{t('support.paragraph3', { ns: 'about' })}</p>*/}
 
-              {/*  <div className='flex flex-col items-center gap-4 my-4'>*/}
+              <div className='flex flex-col items-center gap-4 my-4'>
               {/*    <a href='https://github.com/sponsors/ztjhz' target='_blank'>*/}
               {/*      <img*/}
               {/*        src='https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86'*/}
@@ -110,7 +110,7 @@ const AboutMenu = () => {
               {/*        alt='Support us through the Ko-fi platform.'*/}
               {/*      />*/}
               {/*    </a>*/}
-              {/*    <div className='flex gap-x-10 gap-y-4 flex-wrap justify-center'>*/}
+                <div className='flex gap-x-10 gap-y-4 flex-wrap justify-center'>
               {/*      <div className='flex flex-col items-center justify-center gap-1'>*/}
               {/*        <div>{t('support.alipay', { ns: 'about' })} (Ayaka)</div>*/}
               {/*        <img*/}
@@ -119,18 +119,19 @@ const AboutMenu = () => {
               {/*          alt='Support us through Alipay'*/}
               {/*        />*/}
               {/*      </div>*/}
-              {/*      <div className='flex flex-col items-center justify-center gap-1'>*/}
-              {/*        <div>*/}
-              {/*          {t('support.wechatPay', { ns: 'about' })} (Ayaka)*/}
-              {/*        </div>*/}
-              {/*        <img*/}
-              {/*          className='rounded-md w-32 h-32'*/}
-              {/*          src='https://ayaka14732.github.io/sponsor/wechat.png'*/}
-              {/*          alt='Support us through WeChat Pay'*/}
-              {/*        />*/}
-              {/*      </div>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
+                  <div className='flex flex-col items-center justify-center gap-1'>
+                    <div>
+                      {/*{t('support.wechatPay', { ns: 'about' })} (Ayaka)*/}
+                      使用中遇到问题？对产品有意见或建议？欢迎通过微信公众号联系我们
+                    </div>
+                    <img
+                      className='rounded-md h-32'
+                      src='assets/weixin.png'
+                      alt='Contact us through Weixin'
+                    />
+                  </div>
+                </div>
+              </div>
               {/*  <p>{t('support.paragraph4', { ns: 'about' })}</p>*/}
               {/*</>*/}
 
