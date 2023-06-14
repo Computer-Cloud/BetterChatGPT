@@ -19,11 +19,16 @@ Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
+  'gpt-3.5-turbo-16k',
   'gpt-4',
   'gpt-4-32k',
   // 'gpt-3.5-turbo-0301',
+  // 'gpt-3.5-turbo-0613',
+  // 'gpt-3.5-turbo-16k-0613',
   // 'gpt-4-0314',
+  // 'gpt-4-0613',
   // 'gpt-4-32k-0314',
+  // 'gpt-4-32k-0613',
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
@@ -31,20 +36,37 @@ export const defaultModel = 'gpt-3.5-turbo';
 export const modelMaxToken = {
   'gpt-3.5-turbo': 4096,
   'gpt-3.5-turbo-0301': 4096,
+  'gpt-3.5-turbo-0613': 4096,
+  'gpt-3.5-turbo-16k': 16384,
+  'gpt-3.5-turbo-16k-0613': 16384,
   'gpt-4': 8192,
   'gpt-4-0314': 8192,
+  'gpt-4-0613': 8192,
   'gpt-4-32k': 32768,
   'gpt-4-32k-0314': 32768,
+  'gpt-4-32k-0613': 32768,
 };
 
 export const modelCost = {
   'gpt-3.5-turbo': {
-    prompt: { price: 0.015, unit: 1000 },
+    prompt: { price: 0.012, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
   },
   'gpt-3.5-turbo-0301': {
-    prompt: { price: 0.015, unit: 1000 },
+    prompt: { price: 0.012, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
+  },
+  'gpt-3.5-turbo-0613': {
+    prompt: { price: 0.012, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'gpt-3.5-turbo-16k': {
+    prompt: { price: 0.024, unit: 1000 },
+    completion: { price: 0.030, unit: 1000 },
+  },
+  'gpt-3.5-turbo-16k-0613': {
+    prompt: { price: 0.024, unit: 1000 },
+    completion: { price: 0.030, unit: 1000 },
   },
   'gpt-4': {
     prompt: { price: 0.225, unit: 1000 },
@@ -54,11 +76,19 @@ export const modelCost = {
     prompt: { price: 0.225, unit: 1000 },
     completion: { price: 0.450, unit: 1000 },
   },
+  'gpt-4-0613': {
+    prompt: { price: 0.225, unit: 1000 },
+    completion: { price: 0.450, unit: 1000 },
+  },
   'gpt-4-32k': {
     prompt: { price: 0.450, unit: 1000 },
     completion: { price: 0.900, unit: 1000 },
   },
   'gpt-4-32k-0314': {
+    prompt: { price: 0.450, unit: 1000 },
+    completion: { price: 0.900, unit: 1000 },
+  },
+  'gpt-4-32k-0613': {
     prompt: { price: 0.450, unit: 1000 },
     completion: { price: 0.900, unit: 1000 },
   },
