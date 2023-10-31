@@ -1,0 +1,8 @@
+{
+  "securityMessage": "We prioritise the security of your API key and handle it with utmost care. Your key is exclusively stored on your browser and never shared with any third-party entity. It is solely used for the intended purpose of accessing the OpenAI API and not for any other unauthorised use.",
+  "apiKey": {
+    "howTo": "Get your personal API key <0>here</0>.",
+    "inputLabel": "API Key"
+  },
+  "noApiKeyWarning": "No API key supplied! Please check your API settings."
+}
