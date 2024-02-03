@@ -26,12 +26,13 @@ export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo-0301',
   'gpt-3.5-turbo-0613',
   'gpt-3.5-turbo-1106',
+  'gpt-3.5-turbo-0125',
   'gpt-3.5-turbo-16k-0613',
   'gpt-4-0314',
   'gpt-4-0613',
   'gpt-4-1106-preview',
   'gpt-4-0125-preview',
-  // 'gpt-4-32k-0314',
+  'gpt-4-32k-0314',
   'gpt-4-32k-0613',
   'hyllm',
 ];
@@ -45,6 +46,7 @@ export const modelMaxToken = {
   'gpt-3.5-turbo-16k': 16384,
   'gpt-3.5-turbo-16k-0613': 16384,
   'gpt-3.5-turbo-1106': 16384,
+  'gpt-3.5-turbo-0125': 16384,
   'gpt-4': 8192,
   'gpt-4-0314': 8192,
   'gpt-4-0613': 8192,
@@ -82,6 +84,10 @@ export const modelCost = {
     prompt: { price: 0.004, unit: 1000 },
     completion: { price: 0.007, unit: 1000 },
   },
+  'gpt-3.5-turbo-0125': {
+    prompt: { price: 0.0018, unit: 1000 },
+    completion: { price: 0.0053, unit: 1000 },
+  },
   'gpt-4': {
     prompt: { price: 0.21, unit: 1000 },
     completion: { price: 0.42, unit: 1000 },
@@ -107,16 +113,16 @@ export const modelCost = {
     completion: { price: 0.84, unit: 1000 },
   },
   'gpt-4-turbo-preview': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
+    prompt: { price: 0.035, unit: 1000 },
+    completion: { price: 0.105, unit: 1000 },
   },
   'gpt-4-1106-preview': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
+    prompt: { price: 0.035, unit: 1000 },
+    completion: { price: 0.105, unit: 1000 },
   },
   'gpt-4-0125-preview': {
-    prompt: { price: 0.01, unit: 1000 },
-    completion: { price: 0.03, unit: 1000 },
+    prompt: { price: 0.035, unit: 1000 },
+    completion: { price: 0.105, unit: 1000 },
   },
   'hyllm': {
     prompt: { price: 0.10, unit: 1000 },
